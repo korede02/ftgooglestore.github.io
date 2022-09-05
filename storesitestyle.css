@@ -1,0 +1,316 @@
+html {
+    font-size: 16px;
+}
+html::-webkit-scrollbar {
+    width: 8px;
+    border: 1px solid #fff;
+  }
+  
+html::-webkit-scrollbar-track {
+    border-radius: 0.7rem;
+    background: #eeeeee;
+  }
+  
+html::-webkit-scrollbar-thumb {
+    border-radius: 0.7rem;
+    background: #b0b0b0;
+  }
+body {
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    color:black;
+    margin: 0 3%;
+}
+nav {
+    color: #222222;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 93.5%;
+    align-items: center;
+    background-color: whitesmoke;
+    z-index: 1;
+    box-shadow: 0 2px 2px -2px #00000033;
+}
+#logo {
+    width: 1.25rem;
+    height: 1.25rem;
+
+}
+.menu {
+    visibility: hidden;
+}
+.navlist {
+    width: 40%;
+    flex-grow: 0.3;
+}
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 0.87rem;
+    font-weight: 300;
+    align-items: center;
+}
+.navicon {
+    display: flex;
+    width: 9%;
+    justify-content: space-around;
+}
+.navicon img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.jumbotron {
+    display: flex;
+    background-color: #e3fee5;
+    width: 100%;
+    position: relative;
+    top: 3.7rem;
+    align-items: center;
+    justify-content: space-around;
+}
+.jumboimage{
+    justify-content: end;
+    display: flex;
+    width: 40%;
+    align-content: center;
+}
+.jumboimage img {
+    width: 50rem;
+    height: 39.5rem;
+}
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+h4 {
+    font-weight: 400;
+    line-height: 1.5rem;
+    color: #222222;
+}
+h5 {
+    font-weight: 400;
+}
+.jumbotext {
+    width: 35%;
+    line-height: 1rem;
+}
+.btn {
+    line-height: 2rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.2rem;
+    border: 1.5pt solid black;
+    font-size: 0.9rem;
+    color: #222222;
+    font-weight: 500;
+}
+.btn:hover {
+    background-color: #222222;
+    color: whitesmoke;
+}
+.popular {
+    position: relative;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.poptitle {
+    flex: auto;
+    text-align: center; 
+    font-size: 1.3rem;
+    width: 100%;
+}
+.popproducts {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: auto;
+    width: 80%;
+    height: 21rem;
+}
+.popproducts img {
+    width: 11rem;
+    height: 12rem;
+    border-radius: 8%;
+    justify-self: center;
+}
+figcaption {
+    position: relative;
+    top: 1rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+figure {
+    flex: auto;
+}
+.price {
+    font-weight: 200;
+}
+.popproducts::-webkit-scrollbar {
+    height: 8px;
+}
+.popproducts::-webkit-scrollbar-track {
+    background: #eeeeee;
+    border-radius: 0.7rem;
+}
+.popproducts::-webkit-scrollbar-thumb {
+    background: #b0b0b0;
+    border-radius: 0.7rem;
+}
+.watch, .phonewait {
+    border-radius: 1.9rem;
+    width: 90%;
+    margin: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e9e3dc;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    height: 41rem;
+}
+.watchimg, .waitimg {
+    display: flex;
+    width: 40%;
+    align-content: center;
+}
+.watchimg img, .waitimg img {
+    width: 40rem;
+    height: 41rem;
+}
+.watch {
+    position: relative;
+    top: 12rem;
+}
+.phonewait {
+    position: relative;
+    top: 15rem;
+}
+.watchtext, .waittext {
+    width: 41%;
+    justify-items: center;
+    font-size: 2rem;
+}
+.watchimg {
+    justify-content: end;
+}
+.waitimg {
+    justify-content: start;
+}
+.category {
+    position: relative;
+    top: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+}
+.catproducts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-items: center;
+}
+.catproducts img {
+    width: 11.5rem;
+    height: 6.4rem;
+}
+.catproducts figcaption {
+    color: #4646fd;
+    text-align: center;
+}
+h2 {
+    font-size: 2.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+    nav {
+        width: 100%;
+    }
+    .navlist {
+        visibility: hidden;
+    }
+    .navicon img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .navicon {
+        display: flex;
+        width: 15%;
+        justify-content: space-around;
+    }
+    .menu {
+        visibility: visible;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #logo {
+        visibility: visible;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .jumbotron {
+        flex-direction: column;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-grow: 2;
+        height: 33.5rem;
+        width: 90%;
+        margin: 0 5%;
+    }
+    .jumboimage {
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+    .jumbotext {
+        margin-top: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 89%;
+        text-align: center;
+        height: 70%;
+        flex-wrap: wrap;
+    }
+    .jumboimage img {
+        width: 17rem;
+        height: 17rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.7rem;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+} 
